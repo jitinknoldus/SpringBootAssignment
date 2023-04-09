@@ -9,7 +9,7 @@ import java.time.format.DateTimeFormatter;
 public class TimeService {
     public String getTime(){
         LocalTime time = LocalTime.now();
-        DateTimeFormatter formatTime = DateTimeFormatter.ofPattern("HH:MM:SS");
+        DateTimeFormatter formatTime = DateTimeFormatter.ofPattern("HH:mm:ss");
         return formatTime.format(time);
     }
 }
